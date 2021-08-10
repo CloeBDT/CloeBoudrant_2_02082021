@@ -1,4 +1,4 @@
-/* Raleway */
+/* FONTS */
 @font-face 
 {
     font-family: 'Raleway';
@@ -16,4 +16,45 @@
 *
 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header
+{
+
+}
+
+.color-menu
+{
+   text-decoration: none; 
+   color: black;
+}
+
+.color-menu:hover
+{
+    color: #0065fc;
+    text-decoration-line: overline;
+}
+
+.signup
+{
+    font-weight: bold;
+    color: #0065fc;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logo
+{
+
+}
+
+.header-nav
+{
+    
 }
