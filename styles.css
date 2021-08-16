@@ -18,11 +18,45 @@
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
+/* BODY */
+#bloc-page
+{
+    width: 80%;
+    margin: auto;
+}
+
+h1
+{
+    font-weight: bold;
+}
+
 /* HEADER */
 header
 {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li
+{
+   padding-left: 40px;
+   
+}
+
 
 .color-menu
 {
@@ -36,34 +70,23 @@ header
     text-decoration-line: overline;
 }
 
-.signup
+#signup
 {
     font-weight: bold;
     color: #0065fc;
 }
 
-.header
+/* BLOC1 */
+#bloc1
 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
-.header-logo
+.heberg-marseille, .populaire
 {
-
+    text-align: justify;
 }
 
-.header-nav
-{
-    
-}
-
-/* BODY */
-h1
-{
-    font-weight: bold;
-}
 /* HEBERGEMENTS */
 .heberg-marseille
 {
@@ -80,4 +103,12 @@ h1
     box-shadow: 6px 6px 20px #d6d6d6;
     text-decoration: none;
     color: black;
+}
+
+/* POPULAIRES */
+.populaires
+{
+    border: 1px #f2f2f2 solid;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #f2f2f2;
 }
