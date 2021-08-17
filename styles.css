@@ -25,17 +25,25 @@
     margin: auto;
 }
 
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
 h1
 {
     font-weight: bold;
 }
 
 /* HEADER */
-header
+.header
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: auto;
+    max-width: 1337px;
 }
 
 #logo
@@ -43,6 +51,34 @@ header
     display: flex;
     flex-direction: row;
     align-items: baseline;
+}
+
+.hebnav
+{
+    
+}
+
+.actnav
+{
+    
+}
+
+.hebnav:hover
+{
+    color: #0065fc;
+    text-decoration-line: overline;
+}
+
+.actnav:hover
+{
+    color: #0065fc;
+    text-decoration-line: overline;
+}
+
+#signup
+{
+    font-weight: bold;
+    color: #0065fc;
 }
 
 nav ul
@@ -57,23 +93,120 @@ nav li
    
 }
 
-
-.color-menu
+/* RECHERCHES */
+.search
 {
-   text-decoration: none; 
-   color: black;
+
 }
 
-.color-menu:hover
+.recherche
 {
-    color: #0065fc;
-    text-decoration-line: overline;
+    display: flex;
+    width: 100px;
+    border: solid 1px #f2f2f2;
+    flex-direction: row;
 }
 
-#signup
+.map
 {
-    font-weight: bold;
+
+}
+
+.lieu
+{
+
+}
+
+.boutonrecherche
+{
+
+}
+
+.bloc-filtres
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.filtre-eco
+{
+    display: flex;
+    border: 2px #d6d6d6 solid;
+    border-radius: 23px 23px 23px 23px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.titre-filtre
+{
+    margin-right: 20px;
+}
+
+.filtre-fam
+{
+    display: flex;
+    border: 2px #d6d6d6 solid;
+    border-radius: 23px 23px 23px 23px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.filtre-rom
+{
+    
+    display: flex;
+    border: 2px #d6d6d6 solid;
+    border-radius: 23px 23px 23px 23px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.filtre-ani
+{
+    display: flex;
+    border: 2px #d6d6d6 solid;
+    border-radius: 23px 23px 23px 23px;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info-logo
+{
+    display: flex;
+    border: 1px #d6d6d6 solid;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
     color: #0065fc;
+
+}
+
+.info-text
+{
+
 }
 
 /* BLOC1 */
@@ -90,9 +223,11 @@ nav li
 /* HEBERGEMENTS */
 .heberg-marseille
 {
+    display: flex;
     border: 1px #f2f2f2 solid;
     border-radius: 20px 20px 20px 20px;
     background-color: #f2f2f2;
+    
 }
 
 .auberge-hotel
