@@ -209,35 +209,73 @@ nav li
 
 }
 
-/* BLOC1 */
-#bloc1
-{
-    display: flex;
-}
-
-.heberg-marseille, .populaire
-{
-    text-align: justify;
-}
-
 /* HEBERGEMENTS */
 .heberg-marseille
 {
     display: flex;
+    flex-direction: column;
+    width: 60%;
     border: 1px #f2f2f2 solid;
     border-radius: 20px 20px 20px 20px;
     background-color: #f2f2f2;
     
 }
 
-.auberge-hotel
+.herbergements
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.hebergements a
+{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    width: 250px;
+    height: 200px;
+    margin: auto;
     border: 1px white solid;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 20px #d6d6d6;
     text-decoration: none;
     color: black;
+
+}
+
+.hebergements img
+{
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+}
+
+.auberge-hotel
+{
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: x-small;
+}
+
+a h2
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fa-star-blue
+{
+    color: #0065fc;
+}
+
+.fa-star-grey
+{
+    color: #d9d9d9;
 }
 
 /* POPULAIRES */
