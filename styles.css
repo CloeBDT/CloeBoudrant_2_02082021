@@ -43,37 +43,14 @@ h1
     justify-content: space-between;
     align-items: flex-end;
     margin: auto;
-    max-width: 1337px;
 }
 
-#logo
-{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-.hebnav
-{
-    
-}
-
-.actnav
-{
-    
-}
-
-.hebnav:hover
+.nav:hover
 {
     color: #0065fc;
     text-decoration-line: overline;
 }
 
-.actnav:hover
-{
-    color: #0065fc;
-    text-decoration-line: overline;
-}
 
 #signup
 {
@@ -89,7 +66,8 @@ nav ul
 
 nav li
 {
-   padding-left: 40px;
+   
+    padding-left: 40px;
    
 }
 
@@ -221,13 +199,16 @@ nav li
     
 }
 
-.herbergements
+.heberg-marseille h1
+{
+    margin-left: 20px;
+}
+
+.hebergements
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    
 }
 
 .hebergements a
@@ -242,13 +223,11 @@ nav li
     border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 20px #d6d6d6;
-    text-decoration: none;
-    color: black;
-
 }
 
 .hebergements img
 {
+    width: auto;
     height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -257,9 +236,10 @@ nav li
 
 .auberge-hotel
 {
-    flex-direction: column;
     margin-left: 15px;
-    font-size: x-small;
+    font-size: 10px;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 a h2
@@ -278,10 +258,70 @@ a h2
     color: #d9d9d9;
 }
 
+.plus
+{
+    margin-left: 20px;
+}
+
 /* POPULAIRES */
+.heb-pop
+{
+    display: flex;
+    justify-content: space-around;
+}
+
 .populaires
 {
+    width: 450px;
+    height: 650px;
     border: 1px #f2f2f2 solid;
     border-radius: 20px 20px 20px 20px;
     background-color: #f2f2f2;
+}
+
+.line
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.line h1
+{
+    margin-left: 20px;   
+}
+
+.pluspop
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.pluspop a
+{
+    display: flex;
+    width: 350px;
+    height: 150px;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #d6d6d6;
+}
+
+.pluspop img
+{
+    width: 25%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
+}
+
+.text-pop
+{
+    width: 150px;
+    margin-left: 15px;
+    font-size: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
