@@ -19,10 +19,10 @@
 }
 
 /* BODY */
-#bloc-page
+.bloc-page
 {
-    width: 80%;
-    margin: auto;
+margin-left: 40px;
+margin-right: 40px;
 }
 
 a
@@ -34,6 +34,11 @@ a
 h1
 {
     font-weight: bold;
+}
+
+img
+{
+    object-fit: cover;
 }
 
 /* HEADER */
@@ -48,7 +53,8 @@ h1
 .nav:hover
 {
     color: #0065fc;
-    text-decoration-line: overline;
+    border-top: 1px solid #0065fc;
+
 }
 
 
@@ -66,64 +72,118 @@ nav ul
 
 nav li
 {
-   
-    padding-left: 40px;
+    display: flex;
+    width: 160px;
+    height: 60px;
+    align-items: flex-end;
+    justify-content: center;
    
 }
 
 /* RECHERCHES */
 .search
 {
+    margin-top: 30px;
+}
 
+.search h1
+{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.search p
+{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .recherche
 {
     display: flex;
-    width: 100px;
-    border: solid 1px #f2f2f2;
+    width: auto;
+    height: 40px;
     flex-direction: row;
+    
 }
 
+input::placeholder
+{
+    color: black;
+    font-weight: bold;
+}
+
+.search button 
+{
+    border: 0;
+    background-color: #0065fc;
+    border-radius: 0 15px 15px 0;
+}
+
+button input
+{
+    width: 90px;
+    border: 0;
+    background-color: #0065fc;
+    color: white;
+}
 .map
 {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;
 }
 
 .lieu
 {
-
-}
-
-.boutonrecherche
-{
-
+    border: 1px #f2f2f2 solid;
+    padding-left: 15px;
 }
 
 .bloc-filtres
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.filtre-eco
-{
-    display: flex;
-    border: 2px #d6d6d6 solid;
-    border-radius: 23px 23px 23px 23px;
-    align-items: center;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-
 }
 
 .titre-filtre
 {
     margin-right: 20px;
+}
+
+ .bloc-filtres span
+ {
+    margin-left: 15px;
+ }
+
+.filtre-eco
+{
+    height: 30px;
+    display: flex;
+    border: 2px #d6d6d6 solid;
+    border-left: 0;
+    border-radius: 0 23px 23px 0;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    margin-right: 20px;
+}
+
+.fa-money-bill-wave
+{
+    height: 30px;
+    width: 30px;
+    border: 2px #deebff solid;
+    color: #0065fc;
+    border-radius: 100%;
+    background-color: #deebff;
+    
 }
 
 .filtre-fam
@@ -132,21 +192,30 @@ nav li
     border: 2px #d6d6d6 solid;
     border-radius: 23px 23px 23px 23px;
     align-items: center;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 20px;
+    
+}
+
+.fa-child
+{
+    color: #0065fc;
 }
 
 .filtre-rom
 {
-    
     display: flex;
     border: 2px #d6d6d6 solid;
     border-radius: 23px 23px 23px 23px;
     align-items: center;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 20px;
+
+}
+
+.fa-heart
+{
+    color: #0065fc;
 }
 
 .filtre-ani
@@ -155,17 +224,20 @@ nav li
     border: 2px #d6d6d6 solid;
     border-radius: 23px 23px 23px 23px;
     align-items: center;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 5px 15px 5px 10px;
+}
+
+.fa-dog
+{
+    color: #0065fc;
+    
 }
 
 .info
 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    font-size: small;
 }
 
 .info-logo
@@ -179,12 +251,11 @@ nav li
     align-items: center;
     margin-right: 10px;
     color: #0065fc;
-
 }
 
-.info-text
+.info-t
 {
-
+   padding-top: 5px;
 }
 
 /* HEBERGEMENTS */
@@ -192,10 +263,11 @@ nav li
 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    justify-content: space-between;
     border: 1px #f2f2f2 solid;
     border-radius: 20px 20px 20px 20px;
     background-color: #f2f2f2;
+    margin-right: 30px;
     
 }
 
@@ -208,17 +280,15 @@ nav li
 {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
 }
 
 .hebergements a
 {
     display: flex;
     flex-direction: column;
-    padding: auto;
     width: 250px;
-    height: 200px;
-    margin: auto;
+    height: 200px;   
     border: 1px white solid;
     border-radius: 20px;
     background-color: white;
@@ -261,13 +331,13 @@ a h2
 .plus
 {
     margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 /* POPULAIRES */
 .heb-pop
 {
     display: flex;
-    justify-content: space-around;
 }
 
 .populaires
@@ -310,7 +380,7 @@ a h2
 
 .pluspop img
 {
-    width: 25%;
+    width: 35%;
     height: auto;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -324,4 +394,24 @@ a h2
     font-size: 10px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+/* ACTIVITES */
+
+
+
+/* FOOTER */
+.footer
+{
+    
+    display: flex;
+    border: 1px #f2f2f2 solid;
+    background-color: #f2f2f2;
+
+}
+
+.footer div
+{
+    margin-left: 40px;
+    margin-right: 300px;
 }
