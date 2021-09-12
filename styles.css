@@ -272,7 +272,7 @@ button input
 
 #heberg-marseille h1
 {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .hebergements
@@ -322,7 +322,7 @@ button input
 
 .plus
 {
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 30px;
 }
 
@@ -345,12 +345,10 @@ button input
 {
     display: flex;
     justify-content: space-between;
+    margin: 0 35px 0 35px;
 }
 
-.line h1
-{
-    margin-left: 20px;   
-}
+
 
 .pluspop a
 {
