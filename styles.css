@@ -91,7 +91,6 @@ nav ul
     align-items: flex-end;
     justify-content: center;
     border-top: 2px solid transparent;
-   
 }
 
 .link:hover
@@ -103,7 +102,7 @@ nav ul
 /* RECHERCHES */
 .search
 {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .search h1
@@ -125,7 +124,6 @@ nav ul
     width: auto;
     height: 40px;
     flex-direction: row;
-    
 }
 
 input::placeholder
@@ -171,11 +169,11 @@ button input
 
 .bloc-filtres
 {
-    width: 60%;
+    width: 60vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 20px 0;
 }
 
 .bouton-filtre
@@ -190,10 +188,12 @@ button input
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     cursor: pointer;
+    margin-right: 5px;
 }
+
 .bouton-filtre:hover
 {
-    border-color: #rgb(99, 81, 81);
+    border-color: rgb(99, 81, 81);
     transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
@@ -203,6 +203,7 @@ button input
 .bouton-filtre:hover .radius-icon
 {
     background-color: rgb(99, 81, 81);
+    border: rgb(99, 81, 81);
     transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
@@ -211,7 +212,7 @@ button input
 
 .bouton-filtre span
 {
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
 }
 
 .radius-icon
@@ -239,7 +240,7 @@ button input
 .info
 {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-size: small;
 }
 
@@ -273,6 +274,7 @@ button input
 #heberg-marseille h1
 {
     margin-left: 40px;
+    margin-top: 40px;
 }
 
 .hebergements
@@ -309,7 +311,6 @@ button input
     font-size: 10px;
 }
 
-
 .fa-star-blue
 {
     color: #0065fc;
@@ -323,13 +324,14 @@ button input
 .plus
 {
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /* POPULAIRES */
 .heb-pop
 {
     display: flex;
+    
 }
 
 .populaires
@@ -345,10 +347,16 @@ button input
 {
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 35px;
+    margin: 20px 35px 0 35px;
 }
 
-
+.pluspop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
 
 .pluspop a
 {
@@ -363,14 +371,13 @@ button input
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 20px #d6d6d6;
-    margin: 0 35px 30px 35px;
+    margin: 0 35px 0px 35px;
     padding: 5px;
 }
 
 .blocs-pop img
 {
-    width: 140px;
-    min-width: 140px;
+    width: 9vw;
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
@@ -383,7 +390,10 @@ button input
 }
 
 /* ACTIVITES */
-
+#activites
+{
+    margin-top: 70px;
+}
 
 .act
 {
@@ -393,36 +403,32 @@ button input
     justify-content: space-between;
 }
 
-
-
-.test .blocs-act 
+.act-full .blocs-act 
 {
     height: 100%;
 }
 
-
-.test-a
+.act-split
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
-.test-a .blocs-act
+.act-split .blocs-act
 {
-    height: 47%;
+    height: 45%;
 }
 
 .blocs-act
 {
-    width: 300px;
+    width: 21vw;
     border: 1px white solid;
     border-radius: 20px;
     box-shadow: 6px 6px 20px #d6d6d6;
 }
 
-.blocs-act img
+.blocs-act img, .blocs-act-tall img, .blocs-act-small img
 {
     width: 100%;
     height: 85%;
@@ -430,10 +436,28 @@ button input
     border-radius: 20px 20px 0 0;
 }
 
-.blocs-act h2
+.blocs-act-tall
+{
+    height: 55%;
+    width: 21vw;
+    border: 1px white solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #d6d6d6;
+}
+
+.blocs-act-small
+{
+    height: 35%;
+    width: 21vw;
+    border: 1px white solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #d6d6d6;
+}
+
+.blocs-act h2, .blocs-act-tall h2, .blocs-act-small h2
 {
     font-size: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 /* FOOTER */
