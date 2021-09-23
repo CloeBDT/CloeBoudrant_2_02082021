@@ -291,6 +291,7 @@ button input
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 40px 0 40px;
+    row-gap: 30px;
 }
 
 .blocs-heb
@@ -300,7 +301,6 @@ button input
     border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 20px #d6d6d6;
-    margin-bottom: 30px;
     padding: 5px;
 }
 
@@ -356,7 +356,7 @@ button input
 {
     display: flex;
     justify-content: space-between;
-    margin: 20px 35px 0 35px;
+    margin: 20px 40px 0 40px;
 }
 
 .pluspop
@@ -380,7 +380,7 @@ button input
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 20px #d6d6d6;
-    margin: 0 35px 0px 35px;
+    margin: 0 40px 0px 40px;
     padding: 5px;
 }
 
@@ -484,4 +484,101 @@ button input
 footer p
 {
     cursor: pointer;
+}
+
+/* REGLES RESPONSIVE POUR MOBILES */
+@media screen and (max-width: 750px)
+{
+    .bloc-page
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .search
+    {
+        margin: 0 40px 0 40px;
+    }
+
+    .bloc-filtres
+    {
+        flex-wrap: wrap;
+        align-content: space-between;
+        row-gap: 10px;
+    }
+
+    .heb-pop
+    {
+        flex-direction: column-reverse;
+    }
+
+    .populaires
+    {
+        width: 100%;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        padding-bottom: 40px;
+    }
+
+    .pluspop
+    {
+        height: auto;
+        row-gap: 15px;
+    }
+
+    .blocs-pop img
+    {
+        width: 25vw;
+    }
+
+    #heberg-marseille
+    {
+        border: none;
+        border-radius: 0;
+        background-color: white;
+        margin-right: 0;
+    }
+
+    .hebergements
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 15px;
+    }
+
+    .blocs-heb
+    {
+        width: 100%;
+    }
+    
+    .plus
+    {
+        font-size: 1.1rem;
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+
+    #activites
+    {
+        margin: 0 40px 0 40px;
+    }
+
+    .act
+    {
+        height: auto;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .footer
+    {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .footer div
+    {
+        margin: 20px 0 0 30px;
+    }
 }
