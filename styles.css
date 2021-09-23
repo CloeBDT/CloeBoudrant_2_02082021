@@ -1,17 +1,5 @@
 /* FONTS */
-@font-face 
-{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/raleway-v22-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('fonts/raleway-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/raleway-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/raleway-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/raleway-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/raleway-v22-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *
 {
@@ -25,12 +13,6 @@ body
     padding: 0;
 }
 
-.bloc-page
-{
-margin-left: 40px;
-margin-right: 40px;
-}
-
 a
 {
     color: inherit;
@@ -39,12 +21,30 @@ a
 
 h1
 {
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 750;
+}
+
+h2
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+p
+{
+    font-size: 0.9rem;
 }
 
 img
 {
     object-fit: cover;
+}
+
+.bloc-page
+{
+margin-left: 40px;
+margin-right: 40px;
 }
 
 /* HEADER */
@@ -57,7 +57,7 @@ img
 
 #signup
 {
-    font-weight: bold;
+    font-weight: 700;
     color: #0065fc;
     display: flex;
     width: 160px;
@@ -108,28 +108,51 @@ nav ul
 .search h1
 {
     margin-bottom: 5px;
-    font-size: 20px;
 }
 
 .search p
 {
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.search span
+{
+    font-size: 1.2rem;
 }
 
 .recherche
 {
     display: flex;
     width: auto;
-    height: 40px;
-    flex-direction: row;
+    height: 50px;
+}
+
+.map
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.lieu
+{
+    border: 1px #f2f2f2 solid;
+    padding: 0 20px 0 15px;
+    font-size: 1.1rem;
 }
 
 input::placeholder
 {
     color: black;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .search button 
@@ -142,38 +165,23 @@ input::placeholder
 
 button input
 {
-    width: 90px;
+    width: auto;
     border: 0;
     background-color: #0065fc;
     color: white;
     cursor: pointer;
-}
-
-.map
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    border: 1px #f2f2f2 solid;
-    border-radius: 15px 0 0 15px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-}
-
-.lieu
-{
-    border: 1px #f2f2f2 solid;
-    padding-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 10px 0 10px;
 }
 
 .bloc-filtres
 {
-    width: 60vw;
+    width: 65vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0 20px 0;
+    margin: 30px 0 30px 0;
 }
 
 .bouton-filtre
@@ -217,8 +225,8 @@ button input
 
 .radius-icon
 {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +249,7 @@ button input
 {
     display: flex;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: 1rem;
 }
 
 .info-logo
@@ -308,17 +316,18 @@ button input
 {
     height: 40%;
     margin: 0 0 5px 15px;
-    font-size: 10px;
 }
 
 .fa-star-blue
 {
     color: #0065fc;
+    font-size: 0.8rem;
 }
 
 .fa-star-grey
 {
     color: #d9d9d9;
+    font-size: 0.8rem;
 }
 
 .plus
@@ -386,7 +395,6 @@ button input
 {
     min-width: 140px;
     margin: 5px 0 5px 15px;
-    font-size: 10px;
 }
 
 /* ACTIVITES */
@@ -456,7 +464,6 @@ button input
 
 .blocs-act h2, .blocs-act-tall h2, .blocs-act-small h2
 {
-    font-size: 15px;
     padding-left: 15px;
 }
 
