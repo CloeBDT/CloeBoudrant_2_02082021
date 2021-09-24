@@ -155,24 +155,17 @@ input::placeholder
     font-weight: 800;
 }
 
-.search button 
-{
-    border: 0;
-    background-color: #0065fc;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-}
-
-button input
+.button
 {
     width: auto;
     border: 0;
+    border-radius: 0 15px 15px 0;
     background-color: #0065fc;
     color: white;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 700;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
 }
 
 .bloc-filtres
@@ -192,9 +185,6 @@ button input
     border-radius: 25px;
     font-weight: bold;
     transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
     cursor: pointer;
     margin-right: 5px;
 }
@@ -203,19 +193,13 @@ button input
 {
     border-color: rgb(99, 81, 81);
     transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
 }
 
 .bouton-filtre:hover .radius-icon
 {
     background-color: rgb(99, 81, 81);
-    border: rgb(99, 81, 81);
+    border: none;
     transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
 }
 
 .bouton-filtre span
@@ -235,9 +219,6 @@ button input
     border-radius: 100%;
     margin: -2px 0 -2px -2px;
     transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
 }
 
 .font-awes-blue
@@ -297,7 +278,6 @@ button input
 .blocs-heb
 { 
     width: 30%;
-    border: 1px white solid;
     border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 20px #d6d6d6;
@@ -356,7 +336,21 @@ button input
 {
     display: flex;
     justify-content: space-between;
-    margin: 20px 40px 0 40px;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    padding: 0 40px 0 40px;
+}
+
+.test1
+{
+
+}
+
+.test2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pluspop
@@ -376,7 +370,7 @@ button input
 {
     height: 140px;
     display: flex;
-    border: 1px white solid;
+    
     background-color: white;
     border-radius: 20px;
     box-shadow: 6px 6px 20px #d6d6d6;
