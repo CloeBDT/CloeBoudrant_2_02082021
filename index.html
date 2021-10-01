@@ -15,10 +15,10 @@
     <body>
         <div class="bloc-page">
             <!--HEADER-->
-            <header class="header">
-                <img src="images/Reservia.svg" alt="Logo Reservia" />
+            <header>
                 <nav>
                     <ul>
+                        <li><img class="image-logo" src="images/Reservia.svg" alt="Logo Reservia" /></li>
                         <li><a class="link" href="#heberg-marseille">Hébergements</a></li>
                         <li><a class="link" href="#activites">Activités</a></li>
                         <li><a id="signup">S'inscrire</a></li>
@@ -36,34 +36,39 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </span>
                     <input class="lieu" type="search" name="recherche par lieu" placeholder="Marseille, France" required/>
-                    <input class="button" type="submit" value="Rechercher"/>
+                    <input class="bouton" type="submit" value="Rechercher"/>
+                    <button class="loupe" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
 
                     <div class="bloc-filtres">
                         <h2>Filtres</h2>
-                        <div class="bouton-filtre">
-                            <div class="radius-icon">
-                                <i class="fas fa-money-bill-wave font-awes-blue"></i>
+                        <div class="bloc-bouton">
+                            <div class="bouton-filtre">
+                                <div class="radius-icon">
+                                    <i class="fas fa-money-bill-wave font-awes-blue"></i>
+                                </div>
+                                <span>Économique</span>
                             </div>
-                            <span>Économique</span>
-                        </div>
-                        <div class="bouton-filtre">
-                            <div class="radius-icon">
-                                <i class="fas fa-child font-awes-blue"></i>
+                            <div class="bouton-filtre">
+                                <div class="radius-icon">
+                                    <i class="fas fa-child font-awes-blue"></i>
+                                </div>
+                                <span>Familial</span>
                             </div>
-                            <span>Familial</span>
-                        </div>
-                        <div class="bouton-filtre">
-                            <div class="radius-icon">
-                                <i class="fas fa-heart font-awes-blue"></i>
+                            <div class="bouton-filtre">
+                                <div class="radius-icon">
+                                    <i class="fas fa-heart font-awes-blue"></i>
+                                </div>
+                                <span>Romantique</span>
                             </div>
-                            <span>Romantique</span>
-                        </div>
-                        <div class="bouton-filtre">
-                            <div class="radius-icon">
-                                <i class="fas fa-dog font-awes-blue"></i>
+                            <div class="bouton-filtre">
+                                <div class="radius-icon">
+                                    <i class="fas fa-dog font-awes-blue"></i>
+                                </div>
+                                <span>Animaux autorisés</span>
                             </div>
-                            <span>Animaux autorisés</span>
                         </div>
                     </div>
 
@@ -184,8 +189,8 @@
             <!--POPULAIRES-->
                 <section class="populaires">
                     <div class="line">
-                        <h1 class="test1">Les plus populaires</h1>
-                        <div class="test2">
+                        <h1>Les plus populaires</h1>
+                        <div class="icon-fleche">
                             <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
