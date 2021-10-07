@@ -43,8 +43,8 @@ img
 
 .bloc-page
 {
-margin-left: 40px;
-margin-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* HEADER */
@@ -946,8 +946,6 @@ footer p
         width: 100%;
         height: 200px;
     }
-
-    
 }
 
 /* REGLES RESPONSIVE POUR GRANDS ECRANS */
