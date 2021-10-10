@@ -571,7 +571,7 @@ footer p
 
     .image-logo
     {
-        padding-left: 40px;
+        padding-left: 6vw;
     }
 
     nav
@@ -621,12 +621,24 @@ footer p
 
     .search
     {
-        margin: 0 40px 0 40px;
+        margin: 0 6vw 0 6vw;
+    }
+
+    .search h1
+    {
+        font-size: 1.4rem;
     }
 
     .recherche
     {
-        margin: 0;
+        width: initial;
+        max-width: 350px;
+    }
+
+    .lieu
+    {
+       padding: 0 0 0 15px;
+       width: 100%;
     }
 
     .bouton
