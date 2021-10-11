@@ -321,7 +321,7 @@ input::placeholder
     border-radius: 20px;
     background-color: white;
     box-shadow: 6px 6px 20px #d6d6d6;
-    border: 5px white solid;
+    padding: 5px;
     
 }
 
@@ -914,7 +914,7 @@ footer p
 
     .blocs-heb
     {
-        width: 100%;
+        width: auto;
     }
     
     .plus
